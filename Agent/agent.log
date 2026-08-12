@@ -1,0 +1,13 @@
+2026-08-10 11:19:25 | INFO     | agent.system.device | Generated new local device_id: d4bf7898-8e9e-487f-9607-da39bd41ce99
+2026-08-10 11:19:27 | INFO     | agent.main | Starting EchoDesk Agent (device_id=d4bf7898-8e9e-487f-9607-da39bd41ce99)
+2026-08-10 11:19:27 | INFO     | agent.main | System: {'hostname': 'DESKTOP-DFMJJHN', 'operating_system': 'Windows 10 (10.0.19045)', 'kernel_version': '10.0.19045', 'architecture': 'AMD64', 'python_version': '3.14.5', 'processor': 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel', 'physical_cores': 2, 'logical_cores': 4}
+2026-08-10 11:19:27 | INFO     | agent.api.auth | No device API key found - performing one-time enrollment via login
+2026-08-10 11:19:42 | WARNING  | agent.utils.retry | Retrying after error (attempt 1/5): The read operation timed out
+2026-08-10 11:19:59 | WARNING  | agent.utils.retry | Retrying after error (attempt 2/5): The read operation timed out
+2026-08-10 11:20:16 | WARNING  | agent.utils.retry | Retrying after error (attempt 3/5): The read operation timed out
+2026-08-10 11:20:36 | WARNING  | agent.utils.retry | Retrying after error (attempt 4/5): The read operation timed out
+2026-08-10 11:27:52 | INFO     | agent.main | Starting EchoDesk Agent (device_id=d4bf7898-8e9e-487f-9607-da39bd41ce99)
+2026-08-10 11:27:52 | INFO     | agent.main | System: {'hostname': 'DESKTOP-DFMJJHN', 'operating_system': 'Windows 10 (10.0.19045)', 'kernel_version': '10.0.19045', 'architecture': 'AMD64', 'python_version': '3.14.5', 'processor': 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel', 'physical_cores': 2, 'logical_cores': 4}
+2026-08-10 11:27:52 | INFO     | agent.api.auth | No device API key found - performing one-time enrollment via login
+2026-08-10 11:28:07 | WARNING  | agent.utils.retry | Retrying after error (attempt 1/5): The read operation timed out
+2026-08-10 11:28:24 | WARNING  | agent.utils.retry | Retrying after error (attempt 2/5): The read operation timed out

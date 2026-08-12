@@ -1,0 +1,24 @@
+# Reference systemd unit for the EchoDesk Agent.
+#
+# This exact file is generated dynamically (with the correct paths and user
+# filled in) by agent/services/linux_service.py when you run install.sh - you
+# do not need to edit or install this file by hand. It's kept here purely as
+# a reference for what gets written to /etc/systemd/system/echodesk-agent.service.
+
+[Unit]
+Description=EchoDesk Device Agent
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=REPLACE_WITH_INSTALL_USER
+WorkingDirectory=REPLACE_WITH_INSTALL_DIR
+ExecStart=REPLACE_WITH_INSTALL_DIR/venv/bin/python REPLACE_WITH_INSTALL_DIR/run.py
+Restart=always
+RestartSec=10
+StandardOutput=append:REPLACE_WITH_INSTALL_DIR/agent/logs/service-stdout.log
+StandardError=append:REPLACE_WITH_INSTALL_DIR/agent/logs/service-stderr.log
+
+[Install]
+WantedBy=multi-user.target

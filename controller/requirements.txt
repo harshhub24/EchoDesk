@@ -1,0 +1,20 @@
+PySide6
+requests
+python-socketio[client]
+websocket-client
+python-dotenv
+pyqtgraph
+platformdirs
+
+# Windows-only (secure refresh-token storage via DPAPI)
+pywin32>=306; sys_platform == "win32"
+
+# Non-Windows dev fallback for secure_storage.py (source-only dev
+# environments; the shipped Windows build always uses pywin32/DPAPI instead)
+keyring>=25.0,<26.0; sys_platform != "win32"
+
+# Packaging / testing
+pyinstaller
+pytest
+pytest-qt
+pytest-mock
