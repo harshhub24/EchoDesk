@@ -317,16 +317,28 @@ EchoDesk was built end-to-end through **vibe coding** — describing the system,
 
 Architecture decisions, API contracts, and UI structure were steered through conversation and refined against the real running system — bugs were found and fixed by actually running the code, not assumed correct on paper.
 
----
-
-## 📄 License
-
-Personal project — built for individual use and portfolio purposes. Add a `LICENSE` file if you want to open-source it (MIT is a common choice for solo projects like this).
-
-<div align="center">
-
----
 
 Made with ⚡ and a lot of back-and-forth with Claude.
 
 </div>
+
+## 🛠️ Troubleshooting & Common Issues
+
+If you run into issues while setting up or running EchoDesk:
+
+1. **Database Migration Errors:**
+   - Make sure your PostgreSQL server is running and the database specified in `.env` exists.
+   - Run `flask db upgrade` after setting your environment variables.
+
+2. **Socket.IO Connection Failed:**
+   - Ensure `ECHODESK_BACKEND_URL` is set correctly in both Controller and Agent `.env` files.
+   - Check firewall rules if connecting from a different device on the local network.
+
+3. **Missing System Dependencies (PySide6 / PyQtGraph):**
+   - On Linux, you might need additional Qt libraries: `sudo apt install libxcb-cursor0`.
+
+4. **Agent Privileges:**
+   - Some system metrics or power commands (shutdown/lock) require root/administrator privileges depending on the OS.
+
+## 💬 Support & Issues
+Found a bug or having setup issues? Feel free to open an issue in the [GitHub Issues tab](https://github.com/harshhub24/EchoDesk/issues).
